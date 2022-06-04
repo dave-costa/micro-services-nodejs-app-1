@@ -7,7 +7,7 @@ import express, { Request, Response } from "express"
 dotenv.config()
 
 amq.connect(
-  "amqps://thpkabcl:8VL91xRpoU-b7t8fQjSHfX2F9djr73Mo@shark.rmq.cloudamqp.com/thpkabcl",
+  "yoururl",
   (error0, connect) => {
     if (error0) {
       throw error0
