@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    container_name: microservices_container
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: microservices
+      POSTGRES_DB: teste_microservices
